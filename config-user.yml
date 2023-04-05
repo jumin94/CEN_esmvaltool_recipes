@@ -1,0 +1,84 @@
+###############################################################################
+# User's configuration file for the ESMValTool
+###############################################################################
+---
+
+# Set the console log level debug, [info], warning, error
+log_level: debug
+# verbosity is deprecated and will be removed in the future
+# verbosity: 1
+# Exit on warning? true/[false]
+exit_on_warning: false
+# Plot file format? [ps]/pdf/png/eps/epsi
+output_file_type: png
+# Destination directory
+output_dir: /datos/julia.mindlin/output
+# Auxiliary data directory (used for some additional datasets)
+auxiliary_data_dir: /esarchive/scratch/jcos/data_files/auxiliary_data
+# Use netCDF compression true/[false]
+compress_netcdf: false
+# Save intermediary cubes in the preprocessor true/[false]
+save_intermediary_cubes: false
+# Remove the preproc dir if all fine
+remove_preproc_dir: false
+# Path to custom config-developer file, to customise project configurations.
+# See config-developer.yml for an example. Set to None to use the default
+config_developer_file: /datos/julia.mindlin/config-files/config-developer.yml
+# Run at most this many tasks in parallel null/[1]/2/3/4/..
+# Set to null to use the number of available CPUs.
+# Make sure your system has enough memory for the specified number of tasks.
+max_parallel_tasks: 4
+# Get profiling information for diagnostics
+# Only available for Python diagnostics
+profile_diagnostic: false
+# DONWLOADS:
+offline: true
+download_dir: /shera/datos/CMIP
+
+# Rootpaths to the data from different projects (lists are also possible)
+rootpath:
+  CMIP5: /esarchive/exp/CMIP5
+  grCMIP5: /esarchive/exp/CMIP5
+  # CMIP6: /esarchive/scratch/jcos/CMIP6
+  CMIP6: /shera/datos/CMIP/CMIP6
+  autoCMIP6: /esarchive/exp/CMIP6
+  LENS: /esarchive/scratch/
+  DPLE: /esarchive/scratch/
+  # NCAR: /esarchive/scratch/
+  NCAR: /esarchive/
+  BOUNDED_OBS: /esarchive/scratch/jcos/output
+  CMOR_OBS: /esarchive/scratch/jcos/data_files/rawobs
+  BSC: /esarchive
+  ECEARTH: /esarchive/exp/HIGHRESMIP
+  OBS: /esarchive
+  OBSanom: /esarchive
+  OBSln: /esarchive/scratch/jcos/OBSln
+  PRIMAVERA: /esarchive/exp/PRIMAVERA/original_files
+  CORDEX: /esarchive/exp/CORDEX
+  CORDEX_test: /esarchive/scratch
+  HIGHRESMIP: /esarchive/exp/HIGHRESMIP
+  RAWOBS: /esarchive/scratch/jcos/data_files/rawobs
+  PEP: /gpfs/projects/bsc32/bsc32016/seamless
+  default: /shera/datos
+# Directory structure for input data: [default]/BADC/DKRZ/ETHZ/etc
+# See config-developer.yml for definitions.
+drs:
+  CMIP5: BSC
+  grCMIP5: BSC
+  CMIP6: CIMA
+  autoCMIP6: BSC
+  ECEARTH: BSC
+  OBS: BSC
+  OBSanom: BSC
+  OBSln: BSC
+  BOUNDED_OBS: BSC
+  CMOR_OBS: BSC
+  PRIMAVERA: BSC
+  CORDEX: BSC
+  HIGHRESMIP: BSC
+  LENS: BSC
+  DPLE: BSC
+  NCAR: BSC
+  PEP: BSC
+  CORDEX_test: BSC
+
