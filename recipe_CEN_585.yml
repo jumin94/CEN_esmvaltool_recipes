@@ -1,0 +1,186 @@
+---
+
+documentation:
+  title: title
+  description: | 
+    descr
+  authors:
+    - cos_josep
+
+
+datasets_Amon: &dAmon
+  - &historical-ssp585 {project: CMIP6, exp: ['historical', 'ssp245'], dataset: ACCESS-CM2, ensemble: r1i1p1f1, grid: gn}
+  - { <<: *historical-ssp585, dataset: ACCESS-CM2, ensemble: r2i1p1f1, grid: gn}
+ 
+datasets_Omon: &dOmon
+  - &historical-ssp585 {project: CMIP6, exp: ['historical', 'ssp245'], dataset: ACCESS-CM2, ensemble: r1i1p1f1, grid: gn}
+  - { <<: *historical-ssp585, dataset: ACCESS-CM2, ensemble: r2i1p1f1, grid: gn}
+
+preprocessors:  
+  general_preproc: &general_preproc
+    # anomalies:
+    #   period: full
+    #   reference:
+    #     start_year: 1971
+    #     start_month: 1
+    #     start_day: 1
+    #     end_year: 2000
+    #     end_month: 12
+    #     end_day: 31
+    extract_season:
+      season: djf
+    annual_statistics:
+      operator: mean
+    regrid:
+      scheme: 
+        reference: esmf_regrid.schemes:ESMFAreaWeighted
+      target_grid: 2.5x2.5
+    
+  CP:
+    <<: *general_preproc
+    extract_region:
+      start_latitude: -5
+      end_latitude: 5
+      start_longitude: 180
+      end_longitude: 250
+    area_statistics:
+      operator: mean
+
+  EP:
+    <<: *general_preproc
+    extract_region:
+      start_latitude: 0
+      end_latitude: 10
+      start_longitude: 270
+      end_longitude: 280
+    area_statistics:
+      operator: mean
+
+  TA:
+    <<: *general_preproc
+    extract_levels:
+      levels: [25000.]
+      scheme: linear    
+    extract_region:
+      start_latitude: -15
+      end_latitude: 15
+      start_longitude: 0
+      end_longitude: 360
+    area_statistics:
+      operator: mean
+
+  GW:
+    <<: *general_preproc
+    extract_region:
+      start_latitude: -90
+      end_latitude: 90
+      start_longitude: 0
+      end_longitude: 360
+    area_statistics:
+      operator: mean
+
+  IOD_W:
+    <<: *general_preproc
+    extract_region:
+      start_latitude: -10
+      end_latitude: 10
+      start_longitude: 50
+      end_longitude: 70
+    area_statistics:
+      operator: mean
+
+  IOD_E:
+    <<: *general_preproc
+    extract_region:
+      start_latitude: 0
+      end_latitude: 10
+      start_longitude: 90
+      end_longitude: 200
+    area_statistics:
+      operator: mean
+
+  SPV: 
+    <<: *general_preproc
+    extract_region:
+      start_latitude: -60
+      end_latitude: -50
+      start_longitude: 0
+      end_longitude: 360
+    area_statistics:
+      operator: mean
+    extract_levels:
+      levels: [5000.]
+      scheme: linear
+    
+  UA850: 
+    <<: *general_preproc
+    extract_levels:
+      levels: [85000.]
+      scheme: linear
+    
+   
+diagnostics:
+  multiple_regression_indices:
+    variables:
+      tos_cp:
+        short_name: tos
+        mip: Omon
+        start_year: &start_year 1850
+        end_year: &end_year 2022
+        preprocessor: CP
+        additional_datasets: *dOmon
+      tos_ep:
+        short_name: tos
+        mip: Omon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: EP
+        additional_datasets: *dOmon
+      gw:
+        short_name: tas
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: GW
+        additional_datasets: *dAmon
+      ta:
+        short_name: ta
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: TA
+        additional_datasets: *dAmon
+      tos_iod_w:
+        short_name: tos
+        mip: Omon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: IOD_W
+        additional_datasets: *dOmon
+      tos_iod_e:
+        short_name: tos
+        mip: Omon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: IOD_E
+        additional_datasets: *dOmon
+      ua50_spv:
+        short_name: ua
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: SPV
+        additional_datasets: *dAmon
+      ua850:
+        short_name: ua
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: UA850
+        additional_datasets: *dAmon
+
+    scripts: 
+      multiple_regresion:
+        script: /datos/julia.mindlin/scripts/CEN_regression.py
+
+

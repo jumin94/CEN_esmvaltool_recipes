@@ -1,0 +1,529 @@
+---
+
+documentation:
+  title: title
+  description: | 
+    descr
+  authors:
+    - cos_josep
+
+datasets_Amon: &dAmon
+- dataset: MPI-ESM1-2-HR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CNRM-ESM2-1
+  ensemble: r4i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: CNRM-CM6-1
+  ensemble: r4i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: IPSL-CM6A-LR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: ACCESS-CM2
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2
+  ensemble: r11i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CAMS-CSM1-0
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CMCC-CM2-SR5
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: TaiESM1
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MPI-ESM1-2-LR
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: FGOALS-g3
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: INM-CM5-0
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: INM-CM4-8
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: MRI-ESM2-0
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NorESM2-LM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2-WACCM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NorESM2-MM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: ACCESS-ESM1-5
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: BCC-CSM2-MR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CanESM5
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-LL
+  ensemble: r4i1p1f3
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: UKESM1-0-LL
+  ensemble: r8i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-MM
+  ensemble: r4i1p1f3
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MIROC-ES2L
+  ensemble: r8i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+datasets_Omon: &dOmon
+- dataset: MPI-ESM1-2-HR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CNRM-ESM2-1
+  ensemble: r4i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CNRM-CM6-1
+  ensemble: r4i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: IPSL-CM6A-LR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: ACCESS-CM2
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2
+  ensemble: r11i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2-WACCM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: CAMS-CSM1-0
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CMCC-CM2-SR5
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: TaiESM1
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MPI-ESM1-2-LR
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: FGOALS-g3
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: INM-CM5-0
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: INM-CM4-8
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: MRI-ESM2-0
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: NorESM2-LM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NorESM2-MM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: ACCESS-ESM1-5
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: BCC-CSM2-MR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CanESM5
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-LL
+  ensemble: r4i1p1f3
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: UKESM1-0-LL
+  ensemble: r8i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-MM
+  ensemble: r4i1p1f3
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MIROC-ES2L
+  ensemble: r8i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+
+preprocessors:  
+  general_preproc: &general_preproc
+    # anomalies:
+    #   period: full
+    #   reference:
+    #     start_year: 1971
+    #     start_month: 1
+    #     start_day: 1
+    #     end_year: 2000
+    #     end_month: 12
+    #     end_day: 31
+    extract_season:
+      season: djf
+    seasonal_statistics:
+      operator: mean
+  Amon_regrid: &Amon_regrid
+    regrid:
+      scheme: 
+        reference: esmf_regrid.schemes:ESMFAreaWeighted
+      target_grid: 2.5x2.5
+  Omon_regrid: &Omon_regrid
+    regrid:
+      scheme: linear
+      #  reference: esmf_regrid.schemes:ESMFAreaWeighted
+      target_grid: 2.5x2.5
+    
+  CP:
+    <<: *general_preproc
+    <<: *Omon_regrid
+    extract_region:
+      start_latitude: -5
+      end_latitude: 5
+      start_longitude: 180
+      end_longitude: 250
+    area_statistics:
+      operator: mean
+
+  EP:
+    <<: *general_preproc
+    <<: *Omon_regrid
+    extract_region:
+      start_latitude: 0
+      end_latitude: 10
+      start_longitude: 270
+      end_longitude: 280
+    area_statistics:
+      operator: mean
+
+  TA:
+    <<: *general_preproc
+    <<: *Amon_regrid
+    extract_levels:
+      levels: [25000.]
+      scheme: linear    
+    extract_region:
+      start_latitude: -15
+      end_latitude: 15
+      start_longitude: 0
+      end_longitude: 360
+    area_statistics:
+      operator: mean
+
+  GW:
+    <<: *general_preproc
+    <<: *Amon_regrid
+    extract_region:
+      start_latitude: -90
+      end_latitude: 90
+      start_longitude: 0
+      end_longitude: 360
+    area_statistics:
+      operator: mean
+
+  IOD_W:
+    <<: *general_preproc
+    <<: *Omon_regrid
+    extract_region:
+      start_latitude: -10
+      end_latitude: 10
+      start_longitude: 50
+      end_longitude: 70
+    area_statistics:
+      operator: mean
+
+  IOD_E:
+    <<: *general_preproc
+    <<: *Omon_regrid
+    extract_region:
+      start_latitude: 0
+      end_latitude: 10
+      start_longitude: 90
+      end_longitude: 200
+    area_statistics:
+      operator: mean
+
+  SPV: 
+    <<: *general_preproc
+    <<: *Amon_regrid
+    extract_region:
+      start_latitude: -60
+      end_latitude: -50
+      start_longitude: 0
+      end_longitude: 360
+    area_statistics:
+      operator: mean
+    extract_levels:
+      levels: [5000.]
+      scheme: linear
+    
+  UA850: 
+    <<: *general_preproc
+    <<: *Amon_regrid
+    extract_levels:
+      levels: [85000.]
+      scheme: linear
+    
+   
+diagnostics:
+  multiple_regression_indices:
+    variables:
+      tos_cp:
+        short_name: tos
+        mip: Omon
+        start_year: &start_year 1900
+        end_year: &end_year 2022
+        preprocessor: CP
+        additional_datasets: *dOmon
+      tos_ep:
+        short_name: tos
+        mip: Omon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: EP
+        additional_datasets: *dOmon
+      gw:
+        short_name: tas
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: GW
+        additional_datasets: *dAmon
+      ta:
+        short_name: ta
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: TA
+        additional_datasets: *dAmon
+      tos_iod_w:
+        short_name: tos
+        mip: Omon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: IOD_W
+        additional_datasets: *dOmon
+      tos_iod_e:
+        short_name: tos
+        mip: Omon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: IOD_E
+        additional_datasets: *dOmon
+      ua50_spv:
+        short_name: ua
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: SPV
+        additional_datasets: *dAmon
+      ua850:
+        short_name: ua
+        mip: Amon
+        start_year: *start_year
+        end_year: *end_year
+        preprocessor: UA850
+        additional_datasets: *dAmon
+
+    scripts: 
+      multiple_regresion:
+        script: /datos/julia.mindlin/scripts/CEN_regression.py
+

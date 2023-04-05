@@ -1,0 +1,395 @@
+datasets_Amon:
+- dataset: nada
+- dataset: MPI-ESM1-2-HR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CNRM-ESM2-1
+  ensemble: r4i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: CNRM-CM6-1
+  ensemble: r4i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: IPSL-CM6A-LR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: ACCESS-CM2
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2
+  ensemble: r11i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2-WACCM
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CAMS-CSM1-0
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: IITM-ESM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CMCC-CM2-SR5
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: TaiESM1
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MPI-ESM1-2-LR
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: FGOALS-g3
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: INM-CM5-0
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: INM-CM4-8
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: MRI-ESM2-0
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NorESM2-LM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NorESM2-MM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: ACCESS-ESM1-5
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: BCC-CSM2-MR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NESM3
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CanESM5
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-LL
+  ensemble: r4i1p1f3
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: UKESM1-0-LL
+  ensemble: r8i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-MM
+  ensemble: r4i1p1f3
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: KACE-1-0-G
+  ensemble: r2i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: MIROC-ES2L
+  ensemble: r8i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MIROC6
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+datasets_Omon:
+- dataset: MPI-ESM1-2-HR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CNRM-ESM2-1
+  ensemble: r4i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CNRM-CM6-1
+  ensemble: r4i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: IPSL-CM6A-LR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: ACCESS-CM2
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2
+  ensemble: r11i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CESM2-WACCM
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: CAMS-CSM1-0
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: IITM-ESM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CMCC-CM2-SR5
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: TaiESM1
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: MPI-ESM1-2-LR
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: FGOALS-g3
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: INM-CM5-0
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: INM-CM4-8
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: MRI-ESM2-0
+  ensemble: r5i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: NorESM2-LM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NorESM2-MM
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: ACCESS-ESM1-5
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: BCC-CSM2-MR
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: NESM3
+  ensemble: r1i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: CanESM5
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-LL
+  ensemble: r4i1p1f3
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: UKESM1-0-LL
+  ensemble: r8i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: HadGEM3-GC31-MM
+  ensemble: r4i1p1f3
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
+- dataset: KACE-1-0-G
+  ensemble: r2i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gr
+  project: CMIP6
+- dataset: MIROC-ES2L
+  ensemble: r8i1p1f2
+  exp:
+  - historical
+  - ssp585
+  grid: gr1
+  project: CMIP6
+- dataset: MIROC6
+  ensemble: r9i1p1f1
+  exp:
+  - historical
+  - ssp585
+  grid: gn
+  project: CMIP6
